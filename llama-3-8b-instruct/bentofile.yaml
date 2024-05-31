@@ -1,0 +1,17 @@
+service: 'service:TGI'
+labels:
+  owner: bentoml-team
+  stage: demo
+include:
+  - '*.py'
+  - "setup.sh"
+  - "start_docker.sh"
+python:
+  requirements_txt: './requirements.txt'
+  lock_packages: false
+docker:
+  python_version: "3.11"
+  cuda_version: "12.1"
+  setup_script: "./setup.sh"
+  system_packages:
+    - git
