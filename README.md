@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Download the model
 
-Run the script to download Llama 3.
+Run the script to download Llama 3 to the BentoML [Model Store](https://docs.bentoml.com/en/latest/guides/model-store.html).
 
 ```bash
 python import_model.py
